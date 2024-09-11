@@ -2,6 +2,4 @@ steps:
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
 options:
-  logging: "CLOUD_LOGGING_ONLY" # O 'NONE' si no necesitas logs
-  default_logs_bucket_behavior: "REGIONAL_USER_OWNED_BUCKET"
-  logs_bucket: "gs://streamlit-435306_cloudbuild"
+  logging: "CLOUD_LOGGING_ONLY" # Puedes ajustar esto según tus necesidades
